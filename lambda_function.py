@@ -30,12 +30,7 @@ def lambda_handler(event, context):
             response["statusCode"] = 302
             response["body"] = json.dumps(dict())
             response["headers"] = {"Location": "http://yahoo.com"}
-            # # # Redirect the URL
-            # http = urllib3.PoolManager()
-            # response = http.request(
-            #     "GET",
-            #     "https://www.google.com/search?q=birds&sxsrf=APwXEdfog0xuWijCyJ42EEeqUALcJtgHzQ%3A1685035577803&source=hp&ei=OZpvZKHYLeDn7_UPpOqU2A4&iflsig=AOEireoAAAAAZG-oSUOo5jMdDdLF6cFKNFVT_fQRdblC&oq=bir&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCCMQigUQJzIHCAAQigUQQzIHCAAQigUQQzIKCC4QigUQ1AIQQzIHCAAQigUQQzIHCAAQigUQQzIFCAAQgAQyBQguEIAEMgUILhCABDIFCAAQgAQ6BwgjEOoCECc6CAgAEIoFEJECOggILhCABBDUAlDODFjnDmDYGmgBcAB4AIABdYgBvQKSAQMxLjKYAQCgAQGwAQo&sclient=gws-wiz",
-            # )
+
 
             # r.data
             # b'User-agent: *\nDisallow: /deny\n'

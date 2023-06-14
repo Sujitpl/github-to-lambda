@@ -32,14 +32,7 @@ def lambda_handler(event, context):
             response["headers"] = {"Location": "http://yahoo.com"}
 
 
-            # r.data
-            # b'User-agent: *\nDisallow: /deny\n'
-            # r.status
-            # 200
-
-            # Redirect to the specified URL with the edited headers
-            # return redirect(url, headers=headers)
-            # print(headers)
+           
             return response
         else:
             decoded_binary_secret = base64.b64decode(
